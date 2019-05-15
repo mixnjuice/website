@@ -1,0 +1,7 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+.gp-heading--primary {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 40px;
+  }
+}
