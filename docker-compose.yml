@@ -1,0 +1,13 @@
+version: '3'
+services:
+  builder:
+    build: .
+    image: gusta-website:latest
+    container_name: gusta-website-builder
+  website:
+    image: 'gusta-website:latest'
+    container_name: gusta-website
+    depends_on:
+      - builder
+    ports:
+      - 80:80
