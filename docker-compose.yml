@@ -4,10 +4,16 @@ services:
     build: .
     image: gusta-website:latest
     container_name: gusta-website-builder
+    environment:
+      - VIRTUAL_HOST=localhost
   website:
-    image: 'gusta-website:latest'
-    container_name: gusta-website
+    image: jwilder/nginx-proxy
+    container_name: gusta-website-proxy
     depends_on:
       - builder
     ports:
       - 80:80
+      - 443:443
+    volumes:
+      - ./certs:/etc/nginx/certs
+      - /var/run/docker.sock:/tmp/docker.sock:ro
