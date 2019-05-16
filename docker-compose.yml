@@ -15,6 +15,6 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ${PWD}/certs:/etc/nginx/certs
-      - ${PWD}/certs/dhparam.pem:/etc/nginx/dhparam/dhparam.pem
+      - ./certs:/etc/nginx/certs
+      - ./certs/dhparam.pem:/etc/nginx/dhparam/dhparam.pem
       - /var/run/docker.sock:/tmp/docker.sock:ro
