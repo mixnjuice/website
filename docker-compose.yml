@@ -4,6 +4,8 @@ services:
     build: .
     image: gusta-website:latest
     container_name: gusta-website-builder
+    environment:
+      - VIRTUAL_HOST=$VIRTUAL_HOST
   website:
     image: jwilder/nginx-proxy
     container_name: gusta-website-proxy
