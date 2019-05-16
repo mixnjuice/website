@@ -22,6 +22,25 @@ To create a production build in the `public/` directory, run
 npm run build
 ```
 
+## Docker
+
+You need to execute `npm run build` once before running the compose script.
+
+```sh
+cp .env.default .env
+docker-compose up -d
+```
+
+The site should now be available at [http://localhost](http://localhost) and [https://localhost](https://localhost).
+
+### TLS
+
+TLS is available out of the box with a self-signed `localhost` certificate. If you are running using a domain name and have an SSL certificate for that domain, you can use it by doing the following:
+
+1. Place a [concatenated](https://knowledge.digicert.com/solution/SO17482.html) SSL certificate and its key in `./certs/`. The files should be named after the domain you intend to use, e.g. example.org would have a `./certs/example.org.crt` and a `./certs/example.org.key`.
+2. Create a new file called `.env` in the root source code directory.
+3. Change `VIRTUAL_HOST=localhost` in `.env`, replacing localhost with your FQDN
+
 ## Libraries
 
 - [Gatsby](https://www.gatsbyjs.org/docs/)
