@@ -14,5 +14,9 @@ module.exports = {
   },
   testURL: 'http://localhost',
   setupFiles: ['<rootDir>/jest.shim.js'],
-  modulePaths: ['<rootDir>/src/']
+  modulePaths: ['<rootDir>/src/'],
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.js', '!src/*.js'],
+  coverageDirectory: './coverage',
+  coverageReporters: ['html', 'text-summary']
 };
