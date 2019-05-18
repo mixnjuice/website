@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+Array [
+  <nav
+    className="mb-5 navbar navbar-expand-lg navbar-dark bg-dark"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+    />
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
+    >
+      <div
+        className="mr-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <div
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            data-rb-event-key={null}
+            disabled={false}
+            href="/"
+            onClick={[Function]}
+          >
+            Home
+          </a>
+        </div>
+        <a
+          className="nav-link"
+          data-rb-event-key={null}
+          disabled={false}
+          href="/about"
+          onClick={[Function]}
+        >
+          About Us
+        </a>
+        <a
+          className="nav-link"
+          data-rb-event-key={null}
+          disabled={false}
+          href="/privacy"
+          onClick={[Function]}
+        >
+          Privacy Policy
+        </a>
+        <div
+          className="nav-item"
+        >
+          <a
+            className="nav-link"
+            data-rb-event-key="https://github.com/gusta-project"
+            href="https://github.com/gusta-project"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>,
+  <div
+    className="container"
+  >
+    <main>
+      Testing
+    </main>
+    <footer
+      className="mt-5 text-right"
+    >
+      <p>
+        © 
+        2019
+         
+        Company
+        . Released under the MIT License.
+      </p>
+    </footer>
+  </div>,
+]
+`;
