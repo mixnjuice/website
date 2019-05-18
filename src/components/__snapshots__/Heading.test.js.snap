@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders correctly 1`] = `
+<h1
+  className="gp-heading"
+>
+  Test
+</h1>
+`;
+
+exports[`Heading renders with custom element 1`] = `
+<h5
+  className="gp-heading"
+>
+  Test
+</h5>
+`;
+
+exports[`Heading renders with modifier 1`] = `
+<h1
+  className="gp-heading gp-heading--primary"
+>
+  Test
+</h1>
+`;
