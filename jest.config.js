@@ -13,5 +13,6 @@ module.exports = {
     __PATH_PREFIX__: ''
   },
   testURL: 'http://localhost',
-  setupFiles: ['<rootDir>/jest.shim.js']
+  setupFiles: ['<rootDir>/jest.shim.js'],
+  modulePaths: ['<rootDir>/src/']
 };
