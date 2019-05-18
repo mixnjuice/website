@@ -27,7 +27,7 @@ npm run build
 You need to execute `npm run build` once before running the compose script.
 
 ```sh
-cp .env.default .env
+./init-docker.sh
 docker-compose up -d
 ```
 
