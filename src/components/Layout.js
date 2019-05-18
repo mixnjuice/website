@@ -7,12 +7,30 @@ import 'bootswatch/dist/lux/bootstrap.css';
 
 import Header from './Header';
 
-export default class Layout extends Component {
-  static propTypes = {
-    children: PropTypes.node.isRequired
-  };
+export const PureLayout = ({ data, children }) => (
+  <Fragment>
+    <Header siteTitle={data.site.siteMetadata.title} />
+    <Container>
+      <main>{children}</main>
+      <footer className="mt-5 text-right">
+        <p>
+          &copy; {new Date().getFullYear()} {data.site.siteMetadata.company}.
+          Released under the MIT License.
+        </p>
+      </footer>
+    </Container>
+  </Fragment>
+);
 
+PureLayout.propTypes = {
+  data: PropTypes.object.isRequired,
+  children: PropTypes.node.isRequired
+};
+
+export default class Layout extends Component {
   render() {
+    const { props } = this;
+
     return (
       <StaticQuery
         query={graphql`
@@ -25,20 +43,7 @@ export default class Layout extends Component {
             }
           }
         `}
-        render={data => (
-          <Fragment>
-            <Header siteTitle={data.site.siteMetadata.title} />
-            <Container>
-              <main>{this.props.children}</main>
-              <footer className="mt-5 text-right">
-                <p>
-                  &copy; {new Date().getFullYear()} Gusta Project. Released
-                  under the MIT License.
-                </p>
-              </footer>
-            </Container>
-          </Fragment>
-        )}
+        render={data => <PureLayout {...props} data={data} />}
       />
     );
   }
