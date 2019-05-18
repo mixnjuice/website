@@ -1,6 +1,18 @@
 const React = require('react');
 const gatsby = jest.requireActual('gatsby');
 
+export const staticData = {
+  site: {
+    siteMetadata: {
+      title: 'Site',
+      company: 'Company',
+      description: 'Something',
+      keywords: ['test'],
+      googleAnalyticsId: '1234'
+    }
+  }
+};
+
 /* eslint-disable no-unused-vars */
 module.exports = {
   ...gatsby,
@@ -22,6 +34,6 @@ module.exports = {
         href: to
       })
   ),
-  StaticQuery: jest.fn(),
-  useStaticQuery: jest.fn()
+  StaticQuery: jest.fn().mockImplementation(({ render }) => render(staticData)),
+  useStaticQuery: jest.fn().mockImplementation(() => staticData)
 };
