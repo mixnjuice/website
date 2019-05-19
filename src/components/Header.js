@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 
+import LanguageSelector from './LanguageSelector';
+
 export default class Header extends Component {
   static propTypes = {
     siteTitle: PropTypes.string.isRequired
@@ -40,6 +42,7 @@ export default class Header extends Component {
               </Nav.Link>
             </Nav.Item>
           </Nav>
+          <LanguageSelector />
         </Navbar.Collapse>
       </Navbar>
     );

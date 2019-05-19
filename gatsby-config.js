@@ -31,6 +31,21 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png'
       }
     },
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `src/locale`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-i18next',
+      options: {
+        availableLngs: ['en', 'fr'],
+        fallbackLng: 'en',
+        debug: true
+      }
+    }
   ]
 };
