@@ -13,8 +13,14 @@ const Home = () => (
     {t => (
       <Layout>
         <SEO
-          title="Home"
-          keywords={['liquid', 'e-liquid', 'vape', 'mixing', 'juice']}
+          title="{t('Home')}"
+          keywords={[
+            t('liquid'),
+            t('e-liquid'),
+            t('vape'),
+            t('mixing'),
+            t('juice')
+          ]}
         />
         <Container>
           <Row>
@@ -22,11 +28,7 @@ const Home = () => (
               <Row>
                 <Heading modifier="primary">Gusta Project</Heading>
               </Row>
-              <Row>
-                {t(
-                  'This project aims to provide a free and open experience for mixing e-liquid.'
-                )}
-              </Row>
+              <Row>{t('about_stmt')}</Row>
             </Col>
           </Row>
         </Container>

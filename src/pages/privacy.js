@@ -1,22 +1,33 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { graphql } from 'gatsby';
+import { I18n } from 'react-i18next';
+import { withI18next } from 'gatsby-plugin-i18next';
 
 import Heading from 'components/Heading';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 
-export default class Privacy extends Component {
-  render() {
-    return (
+const Privacy = () => (
+  <I18n>
+    {t => (
       <Layout>
-        <SEO title="Privacy Policy" keywords={['privacy', 'terms', 'policy']} />
-        <Heading modifier="primary">Privacy Policy</Heading>
-        <p>
-          This site does not collect or store any personally identifiable
-          information. It stores access logs containing the IP address and user
-          agent making all requests. These logs are kept on an encrypted-at-rest
-          server with strict access control.
-        </p>
+        <SEO
+          title="{t('privacy_policy')}"
+          keywords={[t('privacy'), t('terms'), t('policy')]}
+        />
+        <Heading modifier="primary">{t('privacy_policy')}</Heading>
+        <p>{t('privacy_stmt')}</p>
       </Layout>
-    );
+    )}
+  </I18n>
+);
+
+export default withI18next()(Privacy);
+
+export const query = graphql`
+  query($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...TranslationFragment
+    }
   }
-}
+`;
