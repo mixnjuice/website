@@ -13,7 +13,7 @@ const About = () => (
     {t => (
       <Layout>
         <SEO
-          title="{t('about_us'}"
+          title={t('about_us')}
           keywords={[t('about'), t('explanation'), t('help'), t('information')]}
         />
         <Container>
