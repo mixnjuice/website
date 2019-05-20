@@ -10,7 +10,7 @@ const NotFoundPage = () => (
   <I18n>
     {t => (
       <Layout>
-        <SEO title="{t('404_not_found')}" />
+        <SEO title={t('404_not_found')} />
         <h1>{t('not_found_404')}</h1>
         <p>{t('not_found_stmt')}</p>
       </Layout>
