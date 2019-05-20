@@ -13,7 +13,7 @@ const Home = () => (
     {t => (
       <Layout>
         <SEO
-          title="{t('Home')}"
+          title={t('Home')}
           keywords={[
             t('liquid'),
             t('e-liquid'),
