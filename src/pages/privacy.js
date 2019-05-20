@@ -12,7 +12,7 @@ const Privacy = () => (
     {t => (
       <Layout>
         <SEO
-          title="{t('privacy_policy')}"
+          title={t('privacy_policy')}
           keywords={[t('privacy'), t('terms'), t('policy')]}
         />
         <Heading modifier="primary">{t('privacy_policy')}</Heading>
