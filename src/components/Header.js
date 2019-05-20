@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-i18next';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
