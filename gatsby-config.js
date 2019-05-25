@@ -4,7 +4,7 @@ module.exports = {
     company: 'Gusta Project',
     description: 'An e-liquid mixing website.',
     keywords: ['vaporizer', 'vape', 'mixing', 'calculator', 'recipe'],
-    googleAnalyticsId: 'changeme'
+    googleAnalyticsId: 'UA-140812424-1'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
