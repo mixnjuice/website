@@ -2,7 +2,6 @@
   "name": "@gusta/website",
   "description": "A simple REST API for recipe and flavor information",
   "version": "0.1.0",
-  "author": "ayan4m1 <andrew@bulletlogic.com>",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
