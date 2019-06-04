@@ -1,6 +1,6 @@
-import { Link } from 'gatsby-plugin-i18next';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Link } from 'gatsby-plugin-i18next';
 import { Navbar, Nav } from 'react-bootstrap';
 
 import LanguageSelector from './LanguageSelector';

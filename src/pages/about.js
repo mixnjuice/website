@@ -19,7 +19,7 @@ const About = () => (
         <Container>
           <Row>
             <Col>
-              <Heading modifier="primary">About Us</Heading>
+              <Heading modifier="primary">{t('about_us')}</Heading>
               <p>{t('about_stmt')}</p>
             </Col>
           </Row>
