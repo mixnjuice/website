@@ -3,26 +3,22 @@ import { graphql } from 'gatsby';
 import { I18n } from 'react-i18next';
 import { withI18next } from 'gatsby-plugin-i18next';
 
-import Heading from 'components/Heading';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 
-const Privacy = () => (
+const NotFoundPage = () => (
   <I18n>
     {t => (
       <Layout>
-        <SEO
-          title={t('privacy_policy')}
-          keywords={[t('privacy'), t('terms'), t('policy')]}
-        />
-        <Heading modifier="primary">{t('privacy_policy')}</Heading>
-        <p>{t('privacy_stmt')}</p>
+        <SEO title={t('404_not_found')} />
+        <h1>{t('not_found_404')}</h1>
+        <p>{t('not_found_stmt')}</p>
       </Layout>
     )}
   </I18n>
 );
 
-export default withI18next()(Privacy);
+export default withI18next()(NotFoundPage);
 
 export const query = graphql`
   query($lng: String!) {

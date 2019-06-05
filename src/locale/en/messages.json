@@ -1,0 +1,23 @@
+{
+  "about_stmt": "This project aims to provide a free and open experience for mixing e-liquid.",
+  "license_stmt": "Released under the MIT License.",
+  "privacy_stmt": "This site does not collect or store any personally identifiable information. It stores access logs containing the IP address and user agent making all requests. These logs are kept on an encrypted-at-rest server with strict access control.",
+  "privacy_policy": "Privacy Policy",
+  "privacy": "privacy",
+  "terms": "terms",
+  "policy": "policy",
+  "about_us": "About Us",
+  "about": "about",
+  "explanation": "explanation",
+  "help": "help",
+  "information": "information",
+  "Home": "Home",
+  "liquid": "liquid",
+  "e-liquid": "e-liquid",
+  "vape": "vape",
+  "mixing": "mixing",
+  "juice": "juice",
+  "404_not_found": "404 not found",
+  "not_found_404": "Not Found (404)",
+  "not_found_stmt": "Unfortunately, that page does not currently exist."
+}
