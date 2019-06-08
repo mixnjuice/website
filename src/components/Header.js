@@ -1,36 +1,43 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { translate } from 'react-i18next';
 import { Link } from 'gatsby-plugin-i18next';
 import { Navbar, Nav } from 'react-bootstrap';
 
 import LanguageSelector from './LanguageSelector';
 
-export default class Header extends Component {
+class Header extends Component {
   static propTypes = {
-    siteTitle: PropTypes.string.isRequired
+    siteTitle: PropTypes.string.isRequired,
+    t: PropTypes.string
   };
 
   static defaultProps = {
-    siteTitle: ''
+    siteTitle: '',
+    t: ''
   };
 
   render() {
+    const { t } = this.props;
+
     return (
       <Navbar bg="dark" variant="dark" expand="lg" className="mb-5">
-        <Navbar.Brand href="/">{this.siteTitle}</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">
+          {this.props.siteTitle}
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Item>
               <Nav.Link as={Link} to="/" activeClassName="active">
-                Home
+                {t('home')}
               </Nav.Link>
             </Nav.Item>
             <Nav.Link as={Link} to="/about" activeClassName="active">
-              About Us
+              {t('about_us')}
             </Nav.Link>
             <Nav.Link as={Link} to="/privacy" activeClassName="active">
-              Privacy Policy
+              {t('privacy_policy')}
             </Nav.Link>
             <Nav.Item>
               <Nav.Link
@@ -48,3 +55,5 @@ export default class Header extends Component {
     );
   }
 }
+
+export default translate('messages')(Header);
