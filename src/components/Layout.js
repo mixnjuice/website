@@ -1,23 +1,19 @@
-import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
-import { StaticQuery, graphql } from 'gatsby';
 import React, { Fragment, Component } from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
+import { Container } from 'react-bootstrap';
 
 import 'bootswatch/dist/lux/bootstrap.css';
 
 import Header from './Header';
+import Footer from './Footer';
 
 export const PureLayout = ({ data, children }) => (
   <Fragment>
     <Header siteTitle={data.site.siteMetadata.title} />
     <Container>
       <main>{children}</main>
-      <footer className="mt-5 text-right">
-        <p>
-          &copy; {new Date().getFullYear()} {data.site.siteMetadata.company}.
-          Released under the MIT License.
-        </p>
-      </footer>
+      <Footer siteTitle={data.site.siteMetadata.company} />
     </Container>
   </Fragment>
 );
