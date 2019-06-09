@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { I18n } from 'react-i18next';
-import { withI18next } from 'gatsby-plugin-i18next';
+import { Link, withI18next } from 'gatsby-plugin-i18next';
 import { Button, Card, CardGroup, Container, Row, Col } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,12 +9,14 @@ import {
   faDatabase,
   faTools,
   faWindowRestore,
-  faCode
+  faCode,
+  faLanguage,
+  faHandsHelping
 } from '@fortawesome/free-solid-svg-icons';
 
-import Heading from 'components/Heading';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
+import Heading from 'components/Heading';
 
 const Home = () => (
   <I18n>
@@ -43,51 +45,49 @@ const Home = () => (
               </Row>
               <Row>
                 <CardGroup>
-                  <Card>
+                  <Card bg="dark" text="white">
                     <Card.Body>
                       <Card.Title className="text-center">
                         <h4>
-                          <FontAwesomeIcon icon={faDatabase} /> OpenAPI
+                          <FontAwesomeIcon icon={faDatabase} />
+                          &nbsp;{t('home_section_api_title')}
                         </h4>
                       </Card.Title>
-                      <Card.Text>
-                        The heart of the Gusta Project is an OpenAPI service
-                        that allows anyone to utilize our data to build open
-                        source DIY software and web sites. Our flavor database
-                        is built upon data collected by the DIY community, as
-                        well as from manufacturers, and curated by volunteers to
-                        ensure accuracy.
-                      </Card.Text>
+                      <Card.Text>{t('home_section_api_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
                       <Button
+                        variant="secondary"
                         size="sm"
                         href="https://github.com/gusta-project/api"
                       >
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; OpenAPI on GitHub
                       </Button>
+                      &nbsp;
+                      <Button
+                        variant="info"
+                        size="sm"
+                        href="https://github.com/gusta-project/api"
+                      >
+                        <FontAwesomeIcon icon={faCode} />
+                        &nbsp; {t('documentation')}
+                      </Button>
                     </Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="primary" text="white">
                     <Card.Body>
                       <Card.Title className="text-center">
                         <h4>
-                          <FontAwesomeIcon icon={faWindowRestore} /> Community
-                          DIY Site
+                          <FontAwesomeIcon icon={faWindowRestore} />
+                          &nbsp;{t('home_section_community_title')}
                         </h4>
                       </Card.Title>
-                      <Card.Text>
-                        Our community DIY web site is being built in parallel
-                        with our OpenAPI in order to provide the community with
-                        the best tools possible. We are building an open source
-                        web site that can be maintained for years to come by the
-                        community and your data will never be held behind a
-                        paywall.
-                      </Card.Text>
+                      <Card.Text>{t('home_section_community_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
                       <Button
+                        variant="secondary"
                         size="sm"
                         href="https://github.com/gusta-project/frontend"
                       >
@@ -96,25 +96,67 @@ const Home = () => (
                       </Button>
                     </Card.Footer>
                   </Card>
-                  <Card>
+                  <Card bg="info" text="white">
                     <Card.Body>
                       <Card.Title className="text-center">
                         <h4>
-                          <FontAwesomeIcon icon={faTools} /> Open Source Tools
+                          <FontAwesomeIcon icon={faTools} />
+                          &nbsp;{t('home_section_tools_title')}
                         </h4>
                       </Card.Title>
-                      <Card.Text>
-                        As the Gusta Project matures, we hope to provide open
-                        source libraries and tools to promote the use of our
-                        OpenAPI. We hope to proliferate new open source projects
-                        by providing the data and libraries they need to get
-                        started.
-                      </Card.Text>
+                      <Card.Text>{t('home_section_tools_text')}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer className="text-center">
+                      <Button
+                        variant="secondary"
+                        size="sm"
+                        href="https://github.com/gusta-project"
+                      >
+                        <FontAwesomeIcon icon={faCode} />
+                        &nbsp; Project on GitHub
+                      </Button>
+                    </Card.Footer>
+                  </Card>
+                </CardGroup>
+              </Row>
+              <Row>
+                <CardGroup>
+                  <Card border="success">
+                    <Card.Body>
+                      <Card.Title className="text-center">
+                        <h4>
+                          <FontAwesomeIcon icon={faHandsHelping} />
+                          &nbsp;{t('home_section_contribute_title')}
+                        </h4>
+                      </Card.Title>
+                      <Card.Text>{t('home_section_contribute_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
                       <Button size="sm" href="https://github.com/gusta-project">
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; Project on GitHub
+                        &nbsp; Contribute
+                      </Button>
+                      &nbsp;
+                      <Button as={Link} variant="success" size="sm" to="/about">
+                        <FontAwesomeIcon icon={faCode} />
+                        &nbsp; About Us
+                      </Button>
+                    </Card.Footer>
+                  </Card>
+                  <Card border="warning">
+                    <Card.Body>
+                      <Card.Title className="text-center">
+                        <h4>
+                          <FontAwesomeIcon icon={faLanguage} />
+                          &nbsp;{t('home_section_i18n_title')}
+                        </h4>
+                      </Card.Title>
+                      <Card.Text>{t('home_section_i18n_text')}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer className="text-center">
+                      <Button as={Link} size="sm" to="/i18n">
+                        <FontAwesomeIcon icon={faCode} />
+                        &nbsp; Translations
                       </Button>
                     </Card.Footer>
                   </Card>
