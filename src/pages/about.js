@@ -36,12 +36,12 @@ const About = () => (
                       Concentrates. He had started mixing in February and wanted
                       to build a better DIY community web site. That would
                       require a flavor database, but none could be found. On
-                      April 19, mixnjuice posted{' '}
+                      April 19th, mixnjuice posted{' '}
                       <a href="https://www.reddit.com/r/DIY_eJuice/comments/bezowp/flavor_databaseopen_api/?ref=share&ref_source=link">
                         this
                       </a>{' '}
                       on the DIY_eJuice subreddit. There was some interest, but
-                      none seemed to exist, so mixnjuice set out to build one.
+                      no API seemed to exist, so mixnjuice set out to build one.
                       Over the next week, the database was named Gusta, which is
                       &quot;taste&quot; in{' '}
                       <a href="https://translate.google.com/#view=home&op=translate&sl=la&tl=en&text=Gusta">
@@ -54,8 +54,8 @@ const About = () => (
                       that displayed his vision for the perfect DIY web site.
                       Suddenly, everyone seemed to be on board for a new DIY web
                       site. At some point over the next couple of days,
-                      mixnjuice came across Korlimann and the Gusta Project was
-                      born. Several members joined right away, while others have
+                      mixnjuice came across Korlimann and the Gusta Project team
+                      was born. Several members joined right away, while others
                       joined since. The owner of AlltheFlavors.com has verbally
                       committed to sharing data with our project.
                     </p>
@@ -65,7 +65,7 @@ const About = () => (
                       others who join when their time allows. We have moved on
                       from Discord to a MatterMost chat server. Node.js and
                       React were chosen as the primary technology for
-                      development by the team. They majority of the code written
+                      development by the team. The majority of the code written
                       early on has been submitted by{' '}
                       <a href="https://github.com/ayan4m1">ayan4m1</a>. Anyone
                       is free to join and we welcome any contribution that can
@@ -103,9 +103,15 @@ const About = () => (
                     <p>
                       We have several team members who have contributed in one
                       way or another, but who haven&apos;t joined the project on
-                      GitHub. If you are a contributor and aren&apos;t listed,
-                      let us know or do a Pull Request so we can give you
-                      credit.
+                      GitHub.{' '}
+                      <span className="alert-info">
+                        If you are a contributor and aren&apos;t listed, let us
+                        know or do a Pull Request in the{' '}
+                        <a href="https://github.com/gusta-project/website">
+                          Website repo
+                        </a>{' '}
+                        so we can give you credit.
+                      </span>
                     </p>
                   </Card.Text>
                   <Card.Title>ayan4m1</Card.Title>
