@@ -62,7 +62,7 @@ const Home = () => (
                         href="https://github.com/gusta-project/api"
                       >
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; OpenAPI on GitHub
+                        &nbsp; {t('button_api_github')}
                       </Button>
                       &nbsp;
                       <Button
@@ -71,7 +71,7 @@ const Home = () => (
                         href="https://github.com/gusta-project/api"
                       >
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; {t('documentation')}
+                        &nbsp; {t('button_api_docs')}
                       </Button>
                     </Card.Footer>
                   </Card>
@@ -80,10 +80,10 @@ const Home = () => (
                       <Card.Title className="text-center">
                         <h4>
                           <FontAwesomeIcon icon={faWindowRestore} />
-                          &nbsp;{t('home_section_community_title')}
+                          &nbsp;{t('home_section_frontend_title')}
                         </h4>
                       </Card.Title>
-                      <Card.Text>{t('home_section_community_text')}</Card.Text>
+                      <Card.Text>{t('home_section_frontend_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
                       <Button
@@ -92,7 +92,7 @@ const Home = () => (
                         href="https://github.com/gusta-project/frontend"
                       >
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; Source Code on GitHub
+                        &nbsp; {t('button_frontend_github')}
                       </Button>
                     </Card.Footer>
                   </Card>
@@ -113,7 +113,7 @@ const Home = () => (
                         href="https://github.com/gusta-project"
                       >
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; Project on GitHub
+                        &nbsp; {t('button_tools_github')}
                       </Button>
                     </Card.Footer>
                   </Card>
@@ -134,12 +134,12 @@ const Home = () => (
                     <Card.Footer className="text-center">
                       <Button size="sm" href="https://github.com/gusta-project">
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; Contribute
+                        &nbsp; {t('button_contribute_github')}
                       </Button>
                       &nbsp;
                       <Button as={Link} variant="success" size="sm" to="/about">
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; About Us
+                        &nbsp; {t('button_about')}
                       </Button>
                     </Card.Footer>
                   </Card>
@@ -156,7 +156,7 @@ const Home = () => (
                     <Card.Footer className="text-center">
                       <Button as={Link} size="sm" to="/i18n">
                         <FontAwesomeIcon icon={faCode} />
-                        &nbsp; Translations
+                        &nbsp; {t('button_i18n')}
                       </Button>
                     </Card.Footer>
                   </Card>
