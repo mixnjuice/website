@@ -60,12 +60,13 @@ const About = () => (
                       committed to sharing data with our project.
                     </p>
                     <p>
-                      While the project Discord has reached nearly 20 members,
+                      While the project Discord had reached nearly 20 members,
                       we currently have a few regular developers and a few
-                      others who join when their time allows. Node.js and React
-                      were chosen as the primary technology for development by
-                      the team. They majority of the code written early on has
-                      been submitted by{' '}
+                      others who join when their time allows. We have moved on
+                      from Discord to a MatterMost chat server. Node.js and
+                      React were chosen as the primary technology for
+                      development by the team. They majority of the code written
+                      early on has been submitted by{' '}
                       <a href="https://github.com/ayan4m1">ayan4m1</a>. Anyone
                       is free to join and we welcome any contribution that can
                       be made to the team.
@@ -92,6 +93,81 @@ const About = () => (
                   >
                     GitHub Contributors
                   </Button>
+                </Card.Body>
+              </Card>
+              <Card>
+                <Card.Header>Gusta Project</Card.Header>
+                <Card.Body>
+                  <Card.Title>Team Members</Card.Title>
+                  <Card.Text>
+                    <p>
+                      We have several team members who have contributed in one
+                      way or another, but who haven&apos;t joined the project on
+                      GitHub. If you are a contributor and aren&apos;t listed,
+                      let us know or do a Pull Request so we can give you
+                      credit.
+                    </p>
+                  </Card.Text>
+                  <Card.Title>ayan4m1</Card.Title>
+                  <Card.Text>
+                    <Button variant="primary" href="https://github.com/ayan4m1">
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>daviddyess</Card.Title>
+                  <Card.Text>
+                    <Button variant="dark" href="https://github.com/daviddyess">
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>JosefBud</Card.Title>
+                  <Card.Text>
+                    <Button variant="info" href="https://github.com/JosefBud">
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>Korlimann</Card.Title>
+                  <Card.Text>
+                    <Button
+                      variant="danger"
+                      href="https://github.com/Korlimann"
+                    >
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>mckernanin</Card.Title>
+                  <Card.Text>
+                    <Button
+                      variant="primary"
+                      href="https://github.com/mckernanin"
+                    >
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>nickdurcholz</Card.Title>
+                  <Card.Text>
+                    <Button
+                      variant="dark"
+                      href="https://github.com/nickdurcholz"
+                    >
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>pscn</Card.Title>
+                  <Card.Text>
+                    <Button variant="warning" href="https://github.com/pscn">
+                      GitHub
+                    </Button>
+                  </Card.Text>
+                  <Card.Title>SenegeacStefan</Card.Title>
+                  <Card.Text>
+                    <Button
+                      variant="danger"
+                      href="https://github.com/SenegeacStefan"
+                    >
+                      GitHub
+                    </Button>
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
