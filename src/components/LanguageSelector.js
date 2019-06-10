@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { Dropdown } from 'react-bootstrap';
-import { Language } from 'gatsby-plugin-i18next';
+import { ButtonGroup, Button, Dropdown } from 'react-bootstrap';
+import { Language, Link } from 'gatsby-plugin-i18next';
 
 export class PureLanguageSelector extends Component {
   static propTypes = {
@@ -14,16 +14,21 @@ export class PureLanguageSelector extends Component {
     const { availableLngs, lng, changeLng } = this.props;
 
     return (
-      <Dropdown>
-        <Dropdown.Toggle>{lng}</Dropdown.Toggle>
-        <Dropdown.Menu>
-          {availableLngs.map(language => (
-            <Dropdown.Item key={language} onClick={() => changeLng(language)}>
-              {language}
-            </Dropdown.Item>
-          ))}
-        </Dropdown.Menu>
-      </Dropdown>
+      <ButtonGroup>
+        <Button variant="dark" as={Link} key="i18n" to="/i18n">
+          i18n
+        </Button>
+        <Dropdown as={ButtonGroup} flip="true">
+          <Dropdown.Toggle>{lng}</Dropdown.Toggle>
+          <Dropdown.Menu flip="true">
+            {availableLngs.map(language => (
+              <Dropdown.Item key={language} onClick={() => changeLng(language)}>
+                {language}
+              </Dropdown.Item>
+            ))}
+          </Dropdown.Menu>
+        </Dropdown>
+      </ButtonGroup>
     );
   }
 }
