@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import IndexPage from './index';
+import i18n from './i18n';
 
-describe('HomePage', () => {
+describe('i18nPage', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<IndexPage />).toJSON();
+    const tree = renderer.create(<i18n />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

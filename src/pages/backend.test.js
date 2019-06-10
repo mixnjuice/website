@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import IndexPage from './index';
+import Backend from './backend';
 
-describe('HomePage', () => {
+describe('BackendPage', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<IndexPage />).toJSON();
+    const tree = renderer.create(<Backend />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });
