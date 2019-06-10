@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-i18next',
       options: {
-        availableLngs: ['en', 'fr'],
+        availableLngs: ['en'],
         fallbackLng: 'en',
         debug: true
       }
