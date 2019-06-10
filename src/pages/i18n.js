@@ -14,7 +14,7 @@ const i18n = () => (
   <I18n>
     {t => (
       <Layout>
-        <SEO title={t('i18n')} />
+        <SEO title={t('i18n_seo_title')} />
         <Heading className="text-center" modifier="primary">
           {t('i18n_heading')}
         </Heading>
