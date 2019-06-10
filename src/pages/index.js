@@ -65,11 +65,7 @@ const Home = () => (
                         &nbsp; {t('button_api_github')}
                       </Button>
                       &nbsp;
-                      <Button
-                        variant="info"
-                        size="sm"
-                        href="https://github.com/gusta-project/api"
-                      >
+                      <Button as={Link} variant="info" size="sm" to="/backend">
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_api_docs')}
                       </Button>
