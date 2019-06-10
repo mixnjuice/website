@@ -22,7 +22,7 @@ export default withI18next()(NotFoundPage);
 
 export const query = graphql`
   query($lng: String!) {
-    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "locale" } }) {
       ...TranslationFragment
     }
   }
