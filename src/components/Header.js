@@ -28,26 +28,19 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" activeClassName="active">
-                {t('home')}
-              </Nav.Link>
-            </Nav.Item>
+            <Nav.Link as={Link} to="/" activeClassName="active">
+              {t('home')}
+            </Nav.Link>
             <Nav.Link as={Link} to="/about" activeClassName="active">
               {t('about_us')}
             </Nav.Link>
-            <Nav.Link as={Link} to="/privacy" activeClassName="active">
-              {t('privacy_policy')}
+            <Nav.Link
+              href="https://github.com/gusta-project"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
             </Nav.Link>
-            <Nav.Item>
-              <Nav.Link
-                href="https://github.com/gusta-project"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </Nav.Link>
-            </Nav.Item>
           </Nav>
           <LanguageSelector />
         </Navbar.Collapse>
@@ -56,4 +49,4 @@ class Header extends Component {
   }
 }
 
-export default translate('messages')(Header);
+export default translate()(Header);
