@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import i18n from './i18n';
+import LocalePage from './locale';
 
-describe('i18nPage', () => {
+describe('LocalePage', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<i18n />).toJSON();
+    const tree = renderer.create(<LocalePage />).toJSON();
 
     expect(tree).toMatchSnapshot();
   });

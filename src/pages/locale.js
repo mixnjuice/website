@@ -10,7 +10,7 @@ import Heading from 'components/Heading';
 
 import locale from 'locale/en/locale.json';
 
-const i18n = () => (
+const LocalePage = () => (
   <I18n>
     {t => (
       <Layout>
@@ -43,7 +43,7 @@ const i18n = () => (
   </I18n>
 );
 
-export default withI18next()(i18n);
+export default withI18next()(LocalePage);
 
 export const query = graphql`
   query($lng: String!) {
