@@ -15,7 +15,7 @@ export class PureLanguageSelector extends Component {
 
     return (
       <ButtonGroup>
-        <Button variant="dark" as={Link} key="i18n" to="/i18n">
+        <Button variant="dark" as={Link} key="locale" to="/locale">
           i18n
         </Button>
         <Dropdown as={ButtonGroup} flip="true">
