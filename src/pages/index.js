@@ -150,7 +150,7 @@ const Home = () => (
                       <Card.Text>{t('home_section_i18n_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
-                      <Button as={Link} size="sm" to="/i18n">
+                      <Button as={Link} size="sm" to="/locale">
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_i18n')}
                       </Button>
