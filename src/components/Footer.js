@@ -6,12 +6,11 @@ import { Link } from 'gatsby-plugin-i18next';
 class Footer extends Component {
   static propTypes = {
     siteTitle: PropTypes.string.isRequired,
-    t: PropTypes.string
+    t: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    siteTitle: '',
-    t: ''
+    siteTitle: ''
   };
 
   render() {
