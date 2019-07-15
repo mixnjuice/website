@@ -4,10 +4,12 @@ exports[`Header renders correctly 1`] = `
 <nav
   className="mb-5 navbar navbar-expand-lg navbar-dark bg-dark"
 >
-  <a
+  <Link
     className="navbar-brand"
-    href="/"
-  />
+    to="/"
+  >
+    Header Test
+  </Link>
   <button
     aria-controls="basic-navbar-nav"
     aria-label="Toggle navigation"
@@ -28,53 +30,39 @@ exports[`Header renders correctly 1`] = `
       className="mr-auto navbar-nav"
       onKeyDown={[Function]}
     >
-      <div
-        className="nav-item"
-      >
-        <a
-          className="nav-link"
-          data-rb-event-key={null}
-          disabled={false}
-          href="/"
-          onClick={[Function]}
-        >
-          Home
-        </a>
-      </div>
-      <a
+      <Link
+        activeClassName="active"
         className="nav-link"
         data-rb-event-key={null}
         disabled={false}
-        href="/about"
         onClick={[Function]}
+        to="/"
       >
-        About Us
-      </a>
-      <a
+        home
+      </Link>
+      <Link
+        activeClassName="active"
         className="nav-link"
         data-rb-event-key={null}
         disabled={false}
-        href="/privacy"
         onClick={[Function]}
+        to="/about"
       >
-        Privacy Policy
+        about_us
+      </Link>
+      <a
+        className="nav-link"
+        data-rb-event-key="https://github.com/gusta-project"
+        href="https://github.com/gusta-project"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        GitHub
       </a>
-      <div
-        className="nav-item"
-      >
-        <a
-          className="nav-link"
-          data-rb-event-key="https://github.com/gusta-project"
-          href="https://github.com/gusta-project"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
+    <LanguageSelector />
   </div>
 </nav>
 `;
