@@ -1,4 +1,8 @@
-version: 2
+version: 2.1
+
+orbs:
+  mattermost-notify: bulletlogic/mattermost-notify@dev:0.0.1
+
 jobs:
   build:
     working_directory: ~/gusta-website
@@ -21,3 +25,11 @@ jobs:
       - run:
           name: test
           command: npm test
+      - mattermost-notify/notify_on_success:
+          branches: '*'
+          reponame: 'gusta-project/website'
+          webhook: '$MATTERMOST_WEBHOOK_WEBSITE'
+      - mattermost-notify/notify_on_failure:
+          branches: '*'
+          reponame: 'gusta-project/website'
+          webhook: '$MATTERMOST_WEBHOOK_WEBSITE'
