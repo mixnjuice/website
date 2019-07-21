@@ -1,0 +1,391 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocalePage renders correctly 1`] = `
+Array [
+  <Header />,
+  <div
+    className="container"
+  >
+    <main>
+      <h1
+        className="gp-heading gp-heading--primary text-center"
+      >
+        i18n_heading
+      </h1>
+      <h3>
+        i18n_stmt
+      </h3>
+      <div
+        className="fade alert alert-info show"
+        role="alert"
+      >
+        i18n_info
+      </div>
+      <div
+        className="card border-info"
+      >
+        <div
+          className="card-header"
+        >
+          File: locale/en/locale.json : 
+          <a
+            href="https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json"
+          >
+            https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json
+          </a>
+        </div>
+        <div
+          className="card-body"
+        >
+          <p
+            className="card-text"
+          >
+            <pre>
+              "
+              save
+              " : "
+              Save
+              "
+            </pre>
+            <pre>
+              "
+              liquid
+              " : "
+              liquid
+              "
+            </pre>
+            <pre>
+              "
+              e-liquid
+              " : "
+              e-liquid
+              "
+            </pre>
+            <pre>
+              "
+              vape
+              " : "
+              vape
+              "
+            </pre>
+            <pre>
+              "
+              mixing
+              " : "
+              mixing
+              "
+            </pre>
+            <pre>
+              "
+              juice
+              " : "
+              juice
+              "
+            </pre>
+            <pre>
+              "
+              home_seo_title
+              " : "
+              Home
+              "
+            </pre>
+            <pre>
+              "
+              home_heading
+              " : "
+              Gusta Project
+              "
+            </pre>
+            <pre>
+              "
+              backend_seo_title
+              " : "
+              Open API Documentation
+              "
+            </pre>
+            <pre>
+              "
+              backend_heading
+              " : "
+              Open API Documentation
+              "
+            </pre>
+            <pre>
+              "
+              backend_stmt
+              " : "
+              Coming Soon!
+              "
+            </pre>
+            <pre>
+              "
+              i18n_seo_title
+              " : "
+              i18n
+              "
+            </pre>
+            <pre>
+              "
+              i18n_heading
+              " : "
+              i18n Translations
+              "
+            </pre>
+            <pre>
+              "
+              i18n_stmt
+              " : "
+              Want to assist the project with translations?
+              "
+            </pre>
+            <pre>
+              "
+              i18n_info
+              " : "
+              The Gusta Project web site has multilingual features, but we need help. Please help us improve and add to our i18n pages!
+              "
+            </pre>
+            <pre>
+              "
+              i18n_footer
+              " : "
+              Fork our repository on GitHub, create a new locale.json file for your language and submit a Pull Request. The value on the right will be what is displayed in your language.
+              "
+            </pre>
+            <pre>
+              "
+              home_section_api_title
+              " : "
+              OpenAPI
+              "
+            </pre>
+            <pre>
+              "
+              home_section_api_text
+              " : "
+              The heart of the Gusta Project is an OpenAPI service that allows anyone to utilize our data to build open source DIY software and web sites. Our flavor database is built upon data collected by the DIY community, as well as from manufacturers, and curated by volunteers to ensure accuracy.
+              "
+            </pre>
+            <pre>
+              "
+              button_api_github
+              " : "
+              OpenAPI on GitHub
+              "
+            </pre>
+            <pre>
+              "
+              button_api_docs
+              " : "
+              Documentation
+              "
+            </pre>
+            <pre>
+              "
+              home_section_frontend_title
+              " : "
+              Community DIY Site
+              "
+            </pre>
+            <pre>
+              "
+              home_section_frontend_text
+              " : "
+              Our community DIY web site is being built in parallel with our OpenAPI in order to provide the community with the best tools possible. We are building an open source web site that can be maintained for years to come by the community and your data will never be held behind a paywall.
+              "
+            </pre>
+            <pre>
+              "
+              button_frontend_github
+              " : "
+              Source Code on GitHub
+              "
+            </pre>
+            <pre>
+              "
+              home_section_tools_title
+              " : "
+              Open Source Tools
+              "
+            </pre>
+            <pre>
+              "
+              home_section_tools_text
+              " : "
+              As the Gusta Project matures, we hope to provide open source libraries and tools to promote the use of our OpenAPI. We hope to proliferate new open source projects by providing the data and libraries they need to get started.
+              "
+            </pre>
+            <pre>
+              "
+              button_tools_github
+              " : "
+              Project on GitHub
+              "
+            </pre>
+            <pre>
+              "
+              home_section_contribute_title
+              " : "
+              Contribute
+              "
+            </pre>
+            <pre>
+              "
+              home_section_contribute_text
+              " : "
+              The Gusta Project is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
+              "
+            </pre>
+            <pre>
+              "
+              button_contribute_github
+              " : "
+              Contribute
+              "
+            </pre>
+            <pre>
+              "
+              button_about
+              " : "
+              About Us
+              "
+            </pre>
+            <pre>
+              "
+              home_section_i18n_title
+              " : "
+              Translations
+              "
+            </pre>
+            <pre>
+              "
+              home_section_i18n_text
+              " : "
+              Our project site supports multiple languages and we would like to provide as many translations as possible. If you are able to assist with translating this site, please do!
+              "
+            </pre>
+            <pre>
+              "
+              button_i18n
+              " : "
+              Translations
+              "
+            </pre>
+            <pre>
+              "
+              privacy_policy
+              " : "
+              Privacy Policy
+              "
+            </pre>
+            <pre>
+              "
+              license_stmt
+              " : "
+              Released under the 
+              "
+            </pre>
+            <pre>
+              "
+              about_stmt
+              " : "
+              The Gusta Project is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
+              "
+            </pre>
+            <pre>
+              "
+              privacy
+              " : "
+              privacy
+              "
+            </pre>
+            <pre>
+              "
+              terms
+              " : "
+              terms
+              "
+            </pre>
+            <pre>
+              "
+              policy
+              " : "
+              policy
+              "
+            </pre>
+            <pre>
+              "
+              about_us
+              " : "
+              About Us
+              "
+            </pre>
+            <pre>
+              "
+              about
+              " : "
+              about
+              "
+            </pre>
+            <pre>
+              "
+              explanation
+              " : "
+              explanation
+              "
+            </pre>
+            <pre>
+              "
+              help
+              " : "
+              help
+              "
+            </pre>
+            <pre>
+              "
+              information
+              " : "
+              information
+              "
+            </pre>
+            <pre>
+              "
+              home
+              " : "
+              Home
+              "
+            </pre>
+            <pre>
+              "
+              404_not_found
+              " : "
+              404 not found
+              "
+            </pre>
+            <pre>
+              "
+              not_found_404
+              " : "
+              Not Found (404)
+              "
+            </pre>
+            <pre>
+              "
+              not_found_stmt
+              " : "
+              Unfortunately, that page does not currently exist.
+              "
+            </pre>
+          </p>
+        </div>
+        <div
+          className="card-footer"
+        >
+          i18n_footer
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </div>,
+]
+`;

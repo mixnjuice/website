@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="mt-5 text-right"
+>
+  <p>
+    © 
+    2019
+     
+    Footer Test
+     
+  </p>
+  <Link
+    to="/about"
+  >
+    about_us
+  </Link>
+   | 
+  <Link
+    to="/privacy"
+  >
+    privacy_policy
+  </Link>
+   | 
+  license_stmt
+  <a
+    href="https://opensource.org/licenses/MIT"
+  >
+    MIT License
+  </a>
+</footer>
+`;

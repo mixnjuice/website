@@ -2,82 +2,7 @@
 
 exports[`AboutPage renders correctly 1`] = `
 Array [
-  <nav
-    className="mb-5 navbar navbar-expand-lg navbar-dark bg-dark"
-  >
-    <a
-      className="navbar-brand"
-      href="/"
-    />
-    <button
-      aria-controls="basic-navbar-nav"
-      aria-label="Toggle navigation"
-      className="navbar-toggler"
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="navbar-toggler-icon"
-      />
-    </button>
-    <div
-      aria-expanded={null}
-      className="navbar-collapse collapse"
-      id="basic-navbar-nav"
-    >
-      <div
-        className="mr-auto navbar-nav"
-        onKeyDown={[Function]}
-      >
-        <div
-          className="nav-item"
-        >
-          <a
-            className="nav-link"
-            data-rb-event-key={null}
-            disabled={false}
-            href="/"
-            onClick={[Function]}
-          >
-            Home
-          </a>
-        </div>
-        <a
-          className="nav-link"
-          data-rb-event-key={null}
-          disabled={false}
-          href="/about"
-          onClick={[Function]}
-        >
-          About Us
-        </a>
-        <a
-          className="nav-link"
-          data-rb-event-key={null}
-          disabled={false}
-          href="/privacy"
-          onClick={[Function]}
-        >
-          Privacy Policy
-        </a>
-        <div
-          className="nav-item"
-        >
-          <a
-            className="nav-link"
-            data-rb-event-key="https://github.com/gusta-project"
-            href="https://github.com/gusta-project"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>,
+  <Header />,
   <div
     className="container"
   >
@@ -94,26 +19,291 @@ Array [
             <h1
               className="gp-heading gp-heading--primary"
             >
-              About Us
+              about_us
             </h1>
-            <p>
-              This project aims to provide a free and open experience for mixing e-liquid.
-            </p>
+            <div
+              className="fade alert alert-dark show"
+              role="alert"
+            >
+              about_stmt
+            </div>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col"
+          >
+            <div
+              className="card"
+            >
+              <div
+                className="card-header"
+              >
+                About the Gusta Project
+              </div>
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title h5"
+                >
+                  Our Story (so far)
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <p>
+                    In early April 2019, mixnjuice had been looking for an Open API or some kind of open database for Flavor Concentrates. He had started mixing in February and wanted to build a better DIY community web site. That would require a flavor database, but none could be found. On April 19th, mixnjuice posted
+                     
+                    <a
+                      href="https://www.reddit.com/r/DIY_eJuice/comments/bezowp/flavor_databaseopen_api/?ref=share&ref_source=link"
+                    >
+                      this
+                    </a>
+                     
+                    on the DIY_eJuice subreddit. There was some interest, but no API seemed to exist, so mixnjuice set out to build one. Over the next week, the database was named Gusta, which is "taste" in
+                     
+                    <a
+                      href="https://translate.google.com/#view=home&op=translate&sl=la&tl=en&text=Gusta"
+                    >
+                      Latin
+                    </a>
+                     
+                    and development on an API began.
+                  </p>
+                  <p>
+                    On May 1, 2019, Wayne Walker (DIY or DIE) uploaded a video that displayed his vision for the perfect DIY web site. Suddenly, everyone seemed to be on board for a new DIY web site. At some point over the next couple of days, mixnjuice came across Korlimann and the Gusta Project team was born. Several members joined right away, while others joined since. The owner of AlltheFlavors.com has verbally committed to sharing data with our project.
+                  </p>
+                  <p>
+                    While the project Discord had reached nearly 20 members, we currently have a few regular developers and a few others who join when their time allows. We have moved on from Discord to a MatterMost chat server. Node.js and React were chosen as the primary technology for development by the team. The majority of the code written early on has been submitted by
+                     
+                    <a
+                      href="https://github.com/ayan4m1"
+                    >
+                      ayan4m1
+                    </a>
+                    . Anyone is free to join and we welcome any contribution that can be made to the team.
+                  </p>
+                </p>
+                <a
+                  className="btn btn-info"
+                  href="https://www.reddit.com/r/DIY_eJuice/"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                >
+                  DIY_eJuice
+                </a>
+                 
+                <a
+                  className="btn btn-primary"
+                  href="https://diyordievaping.com/"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                >
+                  DIY OR DIE
+                </a>
+                 
+                <a
+                  className="btn btn-dark"
+                  href="https://alltheflavors.com/"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                >
+                  ATF
+                </a>
+                 
+                <a
+                  className="btn btn-warning"
+                  href="https://github.com/orgs/gusta-project/people"
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                >
+                  GitHub Contributors
+                </a>
+              </div>
+            </div>
+            <div
+              className="card"
+            >
+              <div
+                className="card-header"
+              >
+                Gusta Project
+              </div>
+              <div
+                className="card-body"
+              >
+                <div
+                  className="card-title h5"
+                >
+                  Team Members
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <p>
+                    We have several team members who have contributed in one way or another, but who haven't joined the project on GitHub.
+                     
+                    <span
+                      className="alert-info"
+                    >
+                      If you are a contributor and aren't listed, let us know or do a Pull Request in the
+                       
+                      <a
+                        href="https://github.com/gusta-project/website"
+                      >
+                        Website repo
+                      </a>
+                       
+                      so we can give you credit.
+                    </span>
+                  </p>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  ayan4m1
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-primary"
+                    href="https://github.com/ayan4m1"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  daviddyess
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-dark"
+                    href="https://github.com/daviddyess"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  JosefBud
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-info"
+                    href="https://github.com/JosefBud"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  Korlimann
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-danger"
+                    href="https://github.com/Korlimann"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  mckernanin
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-primary"
+                    href="https://github.com/mckernanin"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  nickdurcholz
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-dark"
+                    href="https://github.com/nickdurcholz"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  pscn
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-warning"
+                    href="https://github.com/pscn"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+                <div
+                  className="card-title h5"
+                >
+                  SenegeacStefan
+                </div>
+                <p
+                  className="card-text"
+                >
+                  <a
+                    className="btn btn-danger"
+                    href="https://github.com/SenegeacStefan"
+                    onClick={[Function]}
+                    onKeyDown={[Function]}
+                  >
+                    GitHub
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
-    <footer
-      className="mt-5 text-right"
-    >
-      <p>
-        © 
-        2019
-         
-        Company
-        . Released under the MIT License.
-      </p>
-    </footer>
+    <Footer />
   </div>,
 ]
 `;

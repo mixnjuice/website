@@ -9,12 +9,11 @@ import LanguageSelector from './LanguageSelector';
 class Header extends Component {
   static propTypes = {
     siteTitle: PropTypes.string.isRequired,
-    t: PropTypes.string
+    t: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    siteTitle: '',
-    t: ''
+    siteTitle: ''
   };
 
   render() {
