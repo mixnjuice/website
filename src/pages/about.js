@@ -26,22 +26,22 @@ const About = () => (
           <Row>
             <Col>
               <Card>
-                <Card.Header>About the Gusta Project</Card.Header>
+                <Card.Header>About {t('project_name')}</Card.Header>
                 <Card.Body>
                   <Card.Title>Our Story (so far)</Card.Title>
                   <Card.Text>
                     <p>
-                      In early April 2019, mixnjuice had been looking for an
-                      Open API or some kind of open database for Flavor
-                      Concentrates. He had started mixing in February and wanted
-                      to build a better DIY community web site. That would
-                      require a flavor database, but none could be found. On
-                      April 19th, mixnjuice posted{' '}
+                      In early April 2019, ddyess had been looking for an Open
+                      API or some kind of open database for Flavor Concentrates.
+                      He had started mixing in February and wanted to build a
+                      better DIY community web site. That would require a flavor
+                      database, but none could be found. On April 19th, ddyess
+                      posted{' '}
                       <a href="https://www.reddit.com/r/DIY_eJuice/comments/bezowp/flavor_databaseopen_api/?ref=share&ref_source=link">
                         this
                       </a>{' '}
                       on the DIY_eJuice subreddit. There was some interest, but
-                      no API seemed to exist, so mixnjuice set out to build one.
+                      no API seemed to exist, so ddyess set out to build one.
                       Over the next week, the database was named Gusta, which is
                       &quot;taste&quot; in{' '}
                       <a href="https://translate.google.com/#view=home&op=translate&sl=la&tl=en&text=Gusta">
@@ -54,10 +54,10 @@ const About = () => (
                       that displayed his vision for the perfect DIY web site.
                       Suddenly, everyone seemed to be on board for a new DIY web
                       site. At some point over the next couple of days,
-                      mixnjuice came across Korlimann and the Gusta Project team
-                      was born. Several members joined right away, while others
-                      joined since. The owner of AlltheFlavors.com has verbally
-                      committed to sharing data with our project.
+                      mixnjuice came across Korlimann and {t('project_name')}
+                      team was born. Several members joined right away, while
+                      others have joined since. The owner of AlltheFlavors.com
+                      has verbally committed to sharing data with our project.
                     </p>
                     <p>
                       While the project Discord had reached nearly 20 members,
