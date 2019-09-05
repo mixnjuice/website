@@ -1,6 +1,6 @@
 {
-  "name": "@gusta/website",
-  "description": "A simple REST API for recipe and flavor information",
+  "name": "@mixnjuice/website",
+  "description": "A Gatsby-driven static site with project information.",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",

@@ -52,8 +52,8 @@ exports[`Header renders correctly 1`] = `
       </Link>
       <a
         className="nav-link"
-        data-rb-event-key="https://github.com/gusta-project"
-        href="https://github.com/gusta-project"
+        data-rb-event-key="https://github.com/mixnjuice"
+        href="https://github.com/mixnjuice"
         onClick={[Function]}
         onKeyDown={[Function]}
         rel="noopener noreferrer"
