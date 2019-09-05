@@ -29,9 +29,9 @@ Array [
         >
           File: locale/en/locale.json : 
           <a
-            href="https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json"
+            href="https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json"
           >
-            https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json
+            https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json
           </a>
         </div>
         <div
@@ -87,6 +87,13 @@ Array [
               home_seo_title
               " : "
               Home
+              "
+            </pre>
+            <pre>
+              "
+              project_name
+              " : "
+              Mixnjuice
               "
             </pre>
             <pre>

@@ -23,8 +23,8 @@ const LocalePage = () => (
         <Card border="info">
           <Card.Header>
             File: locale/en/locale.json :&nbsp;
-            <a href="https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json">
-              https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json
+            <a href="https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json">
+              https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json
             </a>
           </Card.Header>
           <Card.Body>

@@ -89,7 +89,7 @@ const About = () => (
                   &nbsp;
                   <Button
                     variant="warning"
-                    href="https://github.com/orgs/gusta-project/people"
+                    href="https://github.com/orgs/mixnjuice/people"
                   >
                     GitHub Contributors
                   </Button>
@@ -107,7 +107,7 @@ const About = () => (
                       <span className="alert-info">
                         If you are a contributor and aren&apos;t listed, let us
                         know or do a Pull Request in the{' '}
-                        <a href="https://github.com/gusta-project/website">
+                        <a href="https://github.com/mixnjuice/website">
                           Website repo
                         </a>{' '}
                         so we can give you credit.

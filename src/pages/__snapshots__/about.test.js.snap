@@ -119,7 +119,7 @@ Array [
                  
                 <a
                   className="btn btn-warning"
-                  href="https://github.com/orgs/gusta-project/people"
+                  href="https://github.com/orgs/mixnjuice/people"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                 >
@@ -155,7 +155,7 @@ Array [
                       If you are a contributor and aren't listed, let us know or do a Pull Request in the
                        
                       <a
-                        href="https://github.com/gusta-project/website"
+                        href="https://github.com/mixnjuice/website"
                       >
                         Website repo
                       </a>

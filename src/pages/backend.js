@@ -21,7 +21,7 @@ const Backend = () => (
         <Button
           variant="primary"
           size="lg"
-          href="https://github.com/gusta-project/api"
+          href="https://github.com/mixnjuice/api"
         >
           <FontAwesomeIcon icon={faCode} />
           &nbsp; {t('button_api_github')}
