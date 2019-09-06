@@ -59,7 +59,7 @@ const Home = () => (
                       <Button
                         variant="secondary"
                         size="sm"
-                        href="https://github.com/gusta-project/api"
+                        href="https://github.com/mixnjuice/api"
                       >
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_api_github')}
@@ -85,7 +85,7 @@ const Home = () => (
                       <Button
                         variant="secondary"
                         size="sm"
-                        href="https://github.com/gusta-project/frontend"
+                        href="https://github.com/mixnjuice/frontend"
                       >
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_frontend_github')}
@@ -106,7 +106,7 @@ const Home = () => (
                       <Button
                         variant="secondary"
                         size="sm"
-                        href="https://github.com/gusta-project"
+                        href="https://github.com/mixnjuice"
                       >
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_tools_github')}
@@ -128,7 +128,7 @@ const Home = () => (
                       <Card.Text>{t('home_section_contribute_text')}</Card.Text>
                     </Card.Body>
                     <Card.Footer className="text-center">
-                      <Button size="sm" href="https://github.com/gusta-project">
+                      <Button size="sm" href="https://github.com/mixnjuice">
                         <FontAwesomeIcon icon={faCode} />
                         &nbsp; {t('button_contribute_github')}
                       </Button>
