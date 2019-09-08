@@ -34,7 +34,7 @@ class Header extends Component {
               {t('about_us')}
             </Nav.Link>
             <Nav.Link
-              href="https://github.com/gusta-project"
+              href="https://github.com/mixnjuice"
               target="_blank"
               rel="noopener noreferrer"
             >

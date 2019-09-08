@@ -82,7 +82,7 @@ Array [
                   >
                     <a
                       className="btn btn-secondary btn-sm"
-                      href="https://github.com/gusta-project/api"
+                      href="https://github.com/mixnjuice/api"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                     >
@@ -177,7 +177,7 @@ Array [
                   >
                     <a
                       className="btn btn-secondary btn-sm"
-                      href="https://github.com/gusta-project/frontend"
+                      href="https://github.com/mixnjuice/frontend"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                     >
@@ -245,7 +245,7 @@ Array [
                   >
                     <a
                       className="btn btn-secondary btn-sm"
-                      href="https://github.com/gusta-project"
+                      href="https://github.com/mixnjuice"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                     >
@@ -321,7 +321,7 @@ Array [
                   >
                     <a
                       className="btn btn-primary btn-sm"
-                      href="https://github.com/gusta-project"
+                      href="https://github.com/mixnjuice"
                       onClick={[Function]}
                       onKeyDown={[Function]}
                     >

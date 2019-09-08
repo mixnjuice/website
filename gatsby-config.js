@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gusta Project',
-    company: 'Gusta Project',
+    title: 'Mixnjuice',
+    company: 'Mixnjuice',
     description: 'An e-liquid mixing website.',
     keywords: ['vaporizer', 'vape', 'mixing', 'calculator', 'recipe'],
     googleAnalyticsId: 'UA-140812424-1'
@@ -20,9 +20,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gusta Project',
+        name: 'Mixnjuice',
         /* eslint-disable camelcase */
-        short_name: 'gusta-project',
+        short_name: 'mixnjuice',
         start_url: '/',
         background_color: '#343a40',
         theme_color: '#343a40',

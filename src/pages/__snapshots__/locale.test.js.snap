@@ -29,9 +29,9 @@ Array [
         >
           File: locale/en/locale.json : 
           <a
-            href="https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json"
+            href="https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json"
           >
-            https://github.com/gusta-project/website/tree/master/src/locale/en/locale.json
+            https://github.com/mixnjuice/website/tree/master/src/locale/en/locale.json
           </a>
         </div>
         <div
@@ -91,9 +91,16 @@ Array [
             </pre>
             <pre>
               "
+              project_name
+              " : "
+              Mixnjuice
+              "
+            </pre>
+            <pre>
+              "
               home_heading
               " : "
-              Gusta Project
+              Mixnjuice
               "
             </pre>
             <pre>
@@ -142,7 +149,7 @@ Array [
               "
               i18n_info
               " : "
-              The Gusta Project web site has multilingual features, but we need help. Please help us improve and add to our i18n pages!
+              Mixnjuice web site has multilingual features, but we need help. Please help us improve and add to our i18n pages!
               "
             </pre>
             <pre>
@@ -163,7 +170,7 @@ Array [
               "
               home_section_api_text
               " : "
-              The heart of the Gusta Project is an OpenAPI service that allows anyone to utilize our data to build open source DIY software and web sites. Our flavor database is built upon data collected by the DIY community, as well as from manufacturers, and curated by volunteers to ensure accuracy.
+              The heart of Mixnjuice is an OpenAPI service that allows anyone to utilize our data to build open source DIY software and web sites. Our flavor database is built upon data collected by the DIY community, as well as from manufacturers, and curated by volunteers to ensure accuracy.
               "
             </pre>
             <pre>
@@ -212,7 +219,7 @@ Array [
               "
               home_section_tools_text
               " : "
-              As the Gusta Project matures, we hope to provide open source libraries and tools to promote the use of our OpenAPI. We hope to proliferate new open source projects by providing the data and libraries they need to get started.
+              As Mixnjuice matures, we hope to provide open source libraries and tools to promote the use of our OpenAPI. We hope to proliferate new open source projects by providing the data and libraries they need to get started.
               "
             </pre>
             <pre>
@@ -233,7 +240,7 @@ Array [
               "
               home_section_contribute_text
               " : "
-              The Gusta Project is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
+              Mixnjuice is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
               "
             </pre>
             <pre>
@@ -289,7 +296,7 @@ Array [
               "
               about_stmt
               " : "
-              The Gusta Project is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
+              Mixnjuice is a group of DIY community members and anyone can join! We are as passionate about providing quality, open source tools as we are about mixing!
               "
             </pre>
             <pre>

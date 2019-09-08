@@ -1,4 +1,4 @@
-# Gusta Project - Website
+# Mixnjuice - Website
 
 This code generates a static website that serves as the main landing page for the project from the Internet. Its job is to inform, document, and guide users looking to use or contribute to the project.
 
