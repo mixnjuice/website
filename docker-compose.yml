@@ -2,8 +2,8 @@ version: '3'
 services:
   website:
     build: .
-    image: gusta-website:latest
-    container_name: gusta-website
+    image: mixnjuice/website:latest
+    container_name: mixnjuice-website
     environment:
       VIRTUAL_HOST: ${VIRTUAL_HOST}
       LETSENCRYPT_HOST: ${LETSENCRYPT_HOST}
