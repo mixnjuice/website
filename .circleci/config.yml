@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   build:
-    working_directory: ~/gusta-website
+    working_directory: ~/mixnjuice-website
     docker:
       - image: circleci/node:latest
     steps:
@@ -49,5 +49,3 @@ workflows:
             - build
       - notify_failure:
           context: webhooks
-          requires:
-            - build

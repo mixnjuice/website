@@ -96,7 +96,7 @@ const About = () => (
                 </Card.Body>
               </Card>
               <Card>
-                <Card.Header>Gusta Project</Card.Header>
+                <Card.Header>Mixnjuice</Card.Header>
                 <Card.Body>
                   <Card.Title>Team Members</Card.Title>
                   <Card.Text>
