@@ -37,17 +37,17 @@ jobs:
     steps:
       - prepare
       - run:
-        name: Install gh-pages
-        command: |
-          npm install -g --silent gh-pages
-          git config user.email "circleci@mixnjuice.com"
-          git config user.name "circleci"
+          name: Install gh-pages
+          command: |
+            npm install -g --silent gh-pages
+            git config user.email "circleci@mixnjuice.com"
+            git config user.name "circleci"
       - run:
           name: Build site
           command: npm run build
       - add_ssh_keys:
-        fingerprints:
-          - 'ba:0b:ef:da:ca:3b:a0:b2:05:da:ca:b6:7a:53:ef:89'
+          fingerprints:
+            - 'ba:0b:ef:da:ca:3b:a0:b2:05:da:ca:b6:7a:53:ef:89'
       - run:
           name: Deploy site
           command: npm run deploy
