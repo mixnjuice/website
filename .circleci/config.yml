@@ -68,18 +68,15 @@ workflows:
   main_workflow:
     jobs:
       - build
+      - deploy:
+        requires:
+          - build
+        filters:
+          branches:
+            only: feature/gh-pages
       - notify_success:
           context: webhooks
           requires:
             - build
       - notify_failure:
           context: webhooks
-  deploy_workflow:
-    branches:
-      only:
-        - master
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
