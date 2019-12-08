@@ -32,6 +32,9 @@ jobs:
           name: test
           command: npm test
   deploy:
+    branches:
+      only:
+        - master
     docker:
       - image: circleci/node:latest
     steps:
@@ -69,9 +72,6 @@ workflows:
     jobs:
       - build
       - deploy:
-          branches:
-            only:
-              - master
           requires:
             - build
       - notify_success:
