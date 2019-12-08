@@ -36,6 +36,9 @@ jobs:
       - image: circleci/node:latest
     steps:
       - prepare
+      - add_ssh_keys:
+          fingerprints:
+            - "ba:0b:ef:da:ca:3b:a0:b2:05:da:ca:b6:7a:53:ef:89"
       - run:
           name: build
           command: npm run build
