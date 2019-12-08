@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{322:function(n,o,p){var w=p(154).Redirect;n.exports=w}}]);
+//# sourceMappingURL=component---cache-igorko-redirect-js-3ece94bd1f898d14d9d1.js.map
