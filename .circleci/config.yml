@@ -69,11 +69,11 @@ workflows:
     jobs:
       - build
       - deploy:
-        requires:
-          - build
-        filters:
-          branches:
-            only: feature/gh-pages
+          requires:
+            - build
+          filters:
+            branches:
+              only: feature/gh-pages
       - notify_success:
           context: webhooks
           requires:
