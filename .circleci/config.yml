@@ -73,7 +73,7 @@ workflows:
             - build
           filters:
             branches:
-              only: feature/gh-pages
+              only: master
       - notify_success:
           context: webhooks
           requires:
