@@ -3,28 +3,53 @@ version: 2.1
 orbs:
   mattermost-notify: bulletlogic/mattermost-notify@0.0.4
 
+commands:
+  prepare:
+    description: Install dependencies
+    steps:
+      - checkout
+      - run:
+          name: Update NPM
+          command: 'sudo npm install -g npm@latest'
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+
 jobs:
   build:
     working_directory: ~/mixnjuice-website
     docker:
       - image: circleci/node:latest
     steps:
-      - checkout
-      - run:
-          name: update-npm
-          command: 'sudo npm install -g npm@latest'
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-      - run:
-          name: install-npm
-          command: npm install
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
+      - prepare
       - run:
           name: test
           command: npm test
+  deploy:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - prepare
+      - run:
+          name: Configure gh-pages commit identity
+          command: |
+            git config user.email "circleci@mixnjuice.com"
+            git config user.name "circleci"
+      - run:
+          name: Build site
+          command: npm run build
+      - add_ssh_keys:
+          fingerprints:
+            - '8a:99:f5:31:ed:92:96:d1:ea:35:b4:ab:13:6d:86:46'
+      - run:
+          name: Deploy site
+          command: npm run deploy
   notify_success:
     docker:
       - image: byrnedo/alpine-curl:latest
@@ -43,6 +68,12 @@ workflows:
   main_workflow:
     jobs:
       - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
       - notify_success:
           context: webhooks
           requires:
