@@ -19,7 +19,8 @@ class Footer extends Component {
     return (
       <footer className="mt-5 text-right">
         <p>
-          &copy; {new Date().getFullYear()} {this.props.siteTitle}&nbsp;
+          &copy; {new Date(Date.now()).getFullYear()} {this.props.siteTitle}
+          &nbsp;
         </p>
         <Link to="/about">{t('about_us')}</Link> |&nbsp;
         <Link to="/privacy">{t('privacy_policy')}</Link> | {t('license_stmt')}
